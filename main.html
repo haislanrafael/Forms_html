@@ -10,16 +10,20 @@
 
 <body>
     <h1>Forms end Elements</h1>
-<form action="">
+<form action="">  <!-- cria um formulario, tipo preencher algo com dados, ex: cadastro de um paciente medico: como nome,email, telefone -->
 
     <labol for= "Nome"> <strong> Nome: </strong></label>
-        <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome completo"> <br> 
-    <p><strong>Senha: </strong> </p>
-    <input type="password" name="Senha" placeholder="Digite sua Senha"> <br> 
-    <p><strong>Email: </strong></p>
-    <input type="email" name="Email" placeholder="exemplo@dominio.com"> 
-    <p><strong>Assunto:</strong></p>
-    <input type="text" name="text" placeholder="Ex: Sugestão, Dúvida, Reclamação">
+        <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome completo">
+         <br> 
+    <label for="password"><strong>Senha:</strong></label>
+    <input type="password" name="password" id="password" placeholder="Digite sua Senha"> 
+    <br> 
+    <label for="email"><strong>Email:</strong> </label>
+    <input type="email" name="Email" id="email" placeholder="exemplo@dominio.com"> 
+    <br>
+
+    <label for="assunto"> <strong>Assunto: </strong></label>
+        <input type="text" name="assunto" id="assunto"  placeholder="Duvidas, Reclamações..">
     <p><strong>Mensagem:</strong></p>
     <textarea name="mensagem" placeholder="Digite sua mensagem aqui" rows="4" cols="40"></textarea> <!--para texto maiores na caixa usar o textarea-->
     <br> 
@@ -41,9 +45,14 @@
         <input type="checkbox" name="novidades" >
         aceita receber novidades por Email?
     </label>
-
+    <br>
+    <br>
     <!--placeholder serve para informar o tipo de dado pro usuario na hora de um preenchimento por exemplo-->
 
+    <label for="Range">Volume</label>
+    <input type="range" name="Range" id="Range" min="0" max="10" step="2">
+    <br>
+    <br>
     <button type="submit">Enviar</button>
    
 
